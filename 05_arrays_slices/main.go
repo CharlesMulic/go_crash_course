@@ -12,7 +12,7 @@ func main() {
 	// fruitArr[1] = "Orange"
 
 	// fruitArr := [2]string{"Apple", "Orange"} // declare and init shorthand
-	fruitArr := []string{"Apple", "Orange", "Grape", "Cherry"} // declare and init shorthand
+	fruitArr := []string{"Apple", "Orange", "Grape", "Cherry"} // no size declared, this is a slice (like array list?)
 
 	fmt.Println(fruitArr)
 	fmt.Println(len(fruitArr)) // get length
