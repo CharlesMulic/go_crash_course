@@ -17,7 +17,7 @@ type Person struct {
 
 // value receiver, doesn't alter
 func (person Person) greet() string { // in this case "person" is similar to "this"
-	// person.firstName = person.firstName + "!" // why does this work for a value receiver?
+	// person.firstName = person.firstName + "!" // this works, but doesn't alter the original. The entire struct is passed by value (copied)
 	return "Hello, my name is " + person.firstName + " " + person.lastName + " and I am " + strconv.Itoa(person.age)
 }
 
